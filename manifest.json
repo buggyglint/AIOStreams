@@ -1,0 +1,52 @@
+{
+  "name": "AIOStreams (Nick Pelton)",
+  "id": "aiostreams.nickpelton.local",
+  "version": "1.0.0",
+  "description": "Self-hosted AIOStreams with Real-Debrid (Nick’s TP-Link DDNS setup)",
+  "logo": "https://raw.githubusercontent.com/Viren070/AIOStreams/refs/heads/main/packages/frontend/public/logo.png",
+  "contactEmail": "nick@example.com",
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": false
+  },
+  "types": ["movie", "series", "anime"],
+  "resources": [
+    {
+      "name": "stream",
+      "types": ["movie", "series", "anime"],
+      "idPrefixes": ["tt", "kitsu"]
+    },
+    {
+      "name": "meta",
+      "types": ["other"],
+      "idPrefixes": ["realdebrid", "aiostreamserror"]
+    },
+    {
+      "name": "catalog",
+      "types": ["other"]
+    }
+  ],
+  "catalogs": [
+    {
+      "type": "other",
+      "id": "aiostreams.nickpelton.local.realdebrid",
+      "name": "AIOStreams (Real-Debrid)",
+      "extra": [{ "name": "skip", "isRequired": false }]
+    }
+  ],
+  "addonCatalogs": [],
+  "config": [
+    {
+      "key": "baseUrl",
+      "type": "text",
+      "name": "Base URL",
+      "value": "http://buggyglint.tplinkdns.com:3000"
+    },
+    {
+      "key": "password",
+      "type": "text",
+      "name": "Addon Password",
+      "value": "nick123"
+    }
+  ]
+}
