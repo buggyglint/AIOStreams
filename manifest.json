@@ -26,9 +26,7 @@
       "type": "other",
       "id": "5254414.torrentio-realdebrid",
       "name": "RealDebrid",
-      "extra": [
-        { "name": "skip" }
-      ]
+      "extra": [{ "name": "skip" }]
     }
   ],
   "behaviorHints": {
@@ -36,8 +34,6 @@
     "configurationRequired": false
   },
   "addonCatalogs": [],
-  "contactEmail": "nickpelton@example.com",
-  "background": "",
   "config": {
     "redirect": "http://buggyglint.tplinkdns.com:3000"
   }
